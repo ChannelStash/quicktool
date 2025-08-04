@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Debt Snowball Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Debt Snowball Calculator</h1>
+
+  <div>
+    <label for="monthlyBudget">Total Monthly Budget ($):</label>
+    <input type="number" id="monthlyBudget" />
+  </div>
+
+  <h2>Debts</h2>
+  <table id="debtTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Balance ($)</th>
+        <th>Interest Rate (%)</th>
+        <th>Min Payment ($)</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <button id="addDebt">Add Debt</button>
+  <button id="calculate">Calculate</button>
+
+  <h2>Results</h2>
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+
+  <hr>
+    <p style="text-align:center; font-size: 0.9em; margin-top:40px;">
+    Want to save this tool or support development? <a href="#" id="buyLink">Buy the downloadable version</a>
+    </p>
+
+</body>
+</html>
